@@ -14,15 +14,15 @@
 
 Doing normalization experiments. 
 
--Batch normalization 
+ a) Batch Normalization + L1 + L2 
 
  Result: 
 
--Layer normalization 
+ b) Layer Normalization + L2 
 
  Result: 
 
--Group Normalization 
+c) Group Normalization + L1 
 
  Result:
 
@@ -34,23 +34,30 @@ Doing normalization experiments.
 
  ![Normalization-Batch-4](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/Normalization-Batch-4.JPG)
 
-## 3. ## your findings for normalization techniques,
+## 3. your findings for normalization techniques,
 
  
 
  
 
-## 4. ## add all your graphs
-
+## 4. add all your graphs
+![Metrics](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/graph.png)
  
 
 
 
  
 
-## 5. ## your 3 collection-of-misclassified-images 
+## 5. your 3 collection-of-misclassified-images 
+ a) Batch Normalization + L1 + L2 
+  ![Batch Normalization + L1 + L2 ](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/BN.png)
 
- 
+ b) Layer Normalization + L2 
+ ![Layer Normalization + L2 ](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/LN.png)
+
+ c) Group Normalization + L1 
+ ![Layer Normalization + L2 ](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/GN.png)
+
 
  
 
