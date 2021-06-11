@@ -145,22 +145,25 @@ In ridge regression, an additional term of "sum of the squares of the coefficien
 ## 4. your findings for normalization techniques,
 
  a) Batch Normalization + L1 + L2 
+```
 Params: 4.7k
 Best Train Accuracy: 99.42
 Best Test Accuracy: 99.21
- 
+ ```
 
  b) Layer Normalization + L2 
+```
 Params: 4.7k
 Best Train Accuracy: 99.54
 Best Test Accuracy: 99.26
-  
+  ```
 
  c) Group Normalization + L1 
+ ```
 Params: 4.7k
 Best Train Accuracy: 99.33
 Best Test Accuracy: 99.23
-
+```
 Layer Norm gave better accuracy of the 3
 
 ## 5. add all your graphs
