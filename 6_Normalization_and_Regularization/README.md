@@ -61,8 +61,6 @@ Created 3 functions to help in creating a model
 
 ## 2. how to perform the 3 covered normalization     (cannot use values from the excel sheet shared)? 
 
-
- ![Normalization-Batch-4](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/Normalization-Batch-4.JPG)
  
  ### **Different type of Normalization** 
 
@@ -138,15 +136,34 @@ In ridge regression, an additional term of "sum of the squares of the coefficien
 | ---- | ------------------------------------------------------------ |
 |      | ![img](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/Figure%203.png) |
 
+## 3. show all 3 calculations for  4 sample 2x2 images (image shown in the content has 3 images)
+
+
+
+ ![Normalization-Batch-4](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/Normalization-Batch-4.JPG)
+
+## 4. your findings for normalization techniques,
+
+ a) Batch Normalization + L1 + L2 
+Params: 4.7k
+Best Train Accuracy: 99.42
+Best Test Accuracy: 99.21
  
 
-## 3. your findings for normalization techniques,
+ b) Layer Normalization + L2 
+Params: 4.7k
+Best Train Accuracy: 99.54
+Best Test Accuracy: 99.26
+  
 
- 
+ c) Group Normalization + L1 
+Params: 4.7k
+Best Train Accuracy: 99.33
+Best Test Accuracy: 99.23
 
- 
+Layer Norm gave better accuracy of the 3
 
-## 4. add all your graphs
+## 5. add all your graphs
 ![Metrics](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/graph.png)
  
 
@@ -154,7 +171,7 @@ In ridge regression, an additional term of "sum of the squares of the coefficien
 
  
 
-## 5. your 3 collection-of-misclassified-images 
+## 6. your 3 collection-of-misclassified-images 
  a) Batch Normalization + L1 + L2 
  
  
