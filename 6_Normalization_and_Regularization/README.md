@@ -16,7 +16,7 @@ Created 3 functions to help in creating a model
 
  1)  **buildConvLayer** to do conv->activation->normalization->dropout based on arguments
 
-  
+```  
     def buildConvLayer(in_channels, out_channels, kernel_size = 3, padding = 0, bias = False, activation = nn.ReLU ,normalization = None, group_count = 2, dropout = None):
         conv_layer = []
         conv_layer.append(nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size,padding=padding, bias=bias))
@@ -33,10 +33,9 @@ Created 3 functions to help in creating a model
             conv_layer.append(nn.Dropout(dropout))
 
         return conv_layer
-
- 2) **buildConvBlock** to create a sequential convolution block(Dropout can be added at all layers or last layer only)
-\
-        
+```
+ 2) **buildConvBlock** to create a sequential convolution block(Dropout can be added at all layers or last layer only)\
+```        
     def buildConvBlock(in_channels, out_channels_list, kernel_size = 3, padding = 0, bias = False, activation = nn.ReLU ,normalization = None, group_count = 2, dropout = None, dropout_layers = 'last'):
         conv_block = []
         dropout_val = None
@@ -48,18 +47,17 @@ Created 3 functions to help in creating a model
         if dropout and 'last' == dropout_layers:
             conv_block.append(nn.Dropout(dropout))
         return nn.Sequential(*conv_block)
-
+```
 
  3) **buildTransBlock** to create transition block 
-\
-
+```
     def buildTransBlock(in_channels, out_channels):
         trans_block = []
         if in_channels != out_channels:
             trans_block.append(buildConvLayer(in_channels, out_channels, kernel_size=1))
         trans_block.append(nn.AvgPool2d(2, 2))
         return nn.Sequential(*trans_block)
- 
+ ```
 
 ## 2. how to perform the 3 covered normalization     (cannot use values from the excel sheet shared)? 
 
