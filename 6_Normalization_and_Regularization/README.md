@@ -15,24 +15,24 @@
 Created 3 functions to help in creating a model
 
  1)  buildConvLayer to do conv->activation->normalization->dropout based on arguments
-def buildConvLayer(in_channels, out_channels, kernel_size = 3, padding = 0, bias = False, activation = nn.ReLU ,normalization = None, group_count = 2, dropout = None):
-    conv_layer = []
 
-    conv_layer.append(nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size,padding=padding, bias=bias))
-    conv_layer.append(activation())
+  
+    def buildConvLayer(in_channels, out_channels, kernel_size = 3, padding = 0, bias = False, activation = nn.ReLU ,normalization = None, group_count = 2, dropout = None):
+        conv_layer = []
+        conv_layer.append(nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size,padding=padding, bias=bias))
+        conv_layer.append(activation())
+        if normalization:
+            if "BN" == normalization:
+                conv_layer.append(nn.BatchNorm2d(out_channels))
+            if "GN" == normalization:
+                conv_layer.append(nn.GroupNorm(group_count,out_channels))
+            if "LN" == normalization:
+                conv_layer.append(nn.GroupNorm(1,out_channels))
 
-    if normalization:
-        if "BN" == normalization:
-            conv_layer.append(nn.BatchNorm2d(out_channels))
-        if "GN" == normalization:
-            conv_layer.append(nn.GroupNorm(group_count,out_channels))
-        if "LN" == normalization:
-            conv_layer.append(nn.GroupNorm(1,out_channels))
+        if dropout:
+            conv_layer.append(nn.Dropout(dropout))
 
-    if dropout:
-        conv_layer.append(nn.Dropout(dropout))
-    
-    return conv_layer
+        return conv_layer
 
  
 
