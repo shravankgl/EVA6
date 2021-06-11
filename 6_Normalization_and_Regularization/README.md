@@ -1,13 +1,12 @@
 
 ## Group 
- Shravan
+ Shravan (Building models code)
  
- Vijay
+ Vijay (Normalization Excel)
  
- Sumsum
+ Sumsum (Readme)
  
- Naveen 
-
+ Naveen (Plotting graphs)
 
 
 ## 1. what is your code all about? 
