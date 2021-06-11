@@ -1,13 +1,16 @@
 
 ## Group 
  Shravan
- Vijay 
+ 
+ Vijay
+ 
  Sumsum
+ 
  Naveen 
 
 
 
-1. ## what is your code all about? 
+## 1. what is your code all about? 
 
 Doing normalization experiments. 
 
@@ -25,19 +28,19 @@ Doing normalization experiments.
 
  
 
-2. ## how to perform the 3 covered normalization     (cannot use values from the excel sheet shared)? 
+## 2. how to perform the 3 covered normalization     (cannot use values from the excel sheet shared)? 
 
  
 
  ![Normalization-Batch-4](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/Normalization-Batch-4.JPG)
 
-3. ## your findings for normalization techniques,
+## 3. ## your findings for normalization techniques,
 
  
 
  
 
-4. ## add all     your graphs
+## 4. ## add all your graphs
 
  
 
@@ -45,7 +48,7 @@ Doing normalization experiments.
 
  
 
-5. ## your 3     collection-of-misclassified-images 
+## 5. ## your 3 collection-of-misclassified-images 
 
  
 
