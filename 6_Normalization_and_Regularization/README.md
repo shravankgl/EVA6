@@ -14,7 +14,7 @@
 
 Created 3 functions to help in creating a model
 
- 1)  buildConvLayer to do conv->activation->normalization->dropout based on arguments
+ 1)  **buildConvLayer** to do conv->activation->normalization->dropout based on arguments
 
   
     def buildConvLayer(in_channels, out_channels, kernel_size = 3, padding = 0, bias = False, activation = nn.ReLU ,normalization = None, group_count = 2, dropout = None):
@@ -34,11 +34,35 @@ Created 3 functions to help in creating a model
 
         return conv_layer
 
+ 2) **buildConvBlock** to create a sequential convolution block(Dropout can be added at all layers or last layer only)
+\
+        
+    def buildConvBlock(in_channels, out_channels_list, kernel_size = 3, padding = 0, bias = False, activation = nn.ReLU ,normalization = None, group_count = 2, dropout = None, dropout_layers = 'last'):
+        conv_block = []
+        dropout_val = None
+        if dropout and 'all' == dropout_layers:
+            dropout_val = dropout
+        for out_channels in out_channels_list:
+            conv_block += buildConvLayer(in_channels, out_channels, kernel_size, padding, bias, activation, normalization, group_count, dropout_val)
+            in_channels = out_channels
+        if dropout and 'last' == dropout_layers:
+            conv_block.append(nn.Dropout(dropout))
+        return nn.Sequential(*conv_block)
+
+
+ 3) **buildTransBlock** to create transition block 
+\
+
+    def buildTransBlock(in_channels, out_channels):
+        trans_block = []
+        if in_channels != out_channels:
+            trans_block.append(buildConvLayer(in_channels, out_channels, kernel_size=1))
+        trans_block.append(nn.AvgPool2d(2, 2))
+        return nn.Sequential(*trans_block)
  
 
 ## 2. how to perform the 3 covered normalization     (cannot use values from the excel sheet shared)? 
 
- 
 
  ![Normalization-Batch-4](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/Normalization-Batch-4.JPG)
  
