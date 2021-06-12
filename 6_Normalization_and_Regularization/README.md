@@ -146,24 +146,24 @@ In ridge regression, an additional term of "sum of the squares of the coefficien
  a) Batch Normalization + L1 + L2 
 ```
 Params: 4.7k
-Best Train Accuracy: 99.42
-Best Test Accuracy: 99.21
+Best Train Accuracy: 99.40
+Best Test Accuracy: 99.30
  ```
 
  b) Layer Normalization + L2 
 ```
 Params: 4.7k
-Best Train Accuracy: 99.54
-Best Test Accuracy: 99.26
+Best Train Accuracy: 99.59
+Best Test Accuracy: 99.28
   ```
 
  c) Group Normalization + L1 
  ```
 Params: 4.7k
-Best Train Accuracy: 99.33
-Best Test Accuracy: 99.23
+Best Train Accuracy: 99.41
+Best Test Accuracy: 99.13
 ```
-Layer Norm gave better accuracy of the 3
+
 
 ## 5. add all your graphs
 ![Metrics](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/graph.png)
