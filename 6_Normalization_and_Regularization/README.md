@@ -163,7 +163,7 @@ Params: 4.7k
 Best Train Accuracy: 99.41
 Best Test Accuracy: 99.13
 ```
-
+Layer Normalization converges quickly
 
 ## 5. add all your graphs
 ![Metrics](https://github.com/shravankgl/EVA6/blob/main/6_Normalization_and_Regularization/assets/graph.png)
