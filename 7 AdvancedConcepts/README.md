@@ -108,16 +108,16 @@ Estimated Total Size (MB): 3.67
 
 ## Accuracy by Class
 ```
-Accuracy of plane : 93 %
-Accuracy of   car : 89 %
-Accuracy of  bird : 75 %
-Accuracy of   cat : 52 %
-Accuracy of  deer : 92 %
-Accuracy of   dog : 69 %
-Accuracy of  frog : 91 %
-Accuracy of horse : 84 %
+Accuracy of plane : 89 %
+Accuracy of   car : 96 %
+Accuracy of  bird : 79 %
+Accuracy of   cat : 71 %
+Accuracy of  deer : 85 %
+Accuracy of   dog : 80 %
+Accuracy of  frog : 92 %
+Accuracy of horse : 91 %
 Accuracy of  ship : 93 %
-Accuracy of truck : 87 %
+Accuracy of truck : 92 %
 ```
 
 
