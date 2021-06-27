@@ -109,9 +109,9 @@ class Net(nn.Module):
     def forward(self, x):
         x = self.conv1(x)
         x = self.trans1(x)
-        x = self.conv2(x) + x
+        x = self.conv2(x)
         x = self.trans2(x)
-        x = self.conv3(x) +x
+        x = self.conv3(x)
         x = self.trans3(x)
         x = self.conv4(x)
         x = self.trans4(x)
