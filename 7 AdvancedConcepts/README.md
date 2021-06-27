@@ -17,6 +17,28 @@ class Cifar10SearchDataset(torchvision.datasets.CIFAR10):
         return image, label
 ```
 
+#### Transforms
+train_transform = A.Compose(
+    [
+        A.ShiftScaleRotate(shift_limit=0.05, scale_limit=0.05, rotate_limit=5, p=0.5),
+        A.HorizontalFlip(p=0.5),
+        A.CoarseDropout(max_holes = 1, max_height=16, max_width=16, min_holes = 1,
+                        min_height=16, min_width=16,
+                        fill_value=mean, mask_fill_value = None),
+        A.Normalize(mean, std),
+        A.ToGray(p=0.3),
+        ToTensorV2(),
+    ]
+)
+
+test_transform = A.Compose(
+    [
+        A.Normalize(mean, std),
+        ToTensorV2(),
+    ]
+)
+
+
 ## Model
 
 ```
