@@ -80,7 +80,23 @@ Estimated Total Size (MB): 3.67
 ----------------------------------------------------------------
 ```
 
+## Accuracy by Class
+```
+Accuracy of plane : 93 %
+Accuracy of   car : 89 %
+Accuracy of  bird : 75 %
+Accuracy of   cat : 52 %
+Accuracy of  deer : 92 %
+Accuracy of   dog : 69 %
+Accuracy of  frog : 91 %
+Accuracy of horse : 84 %
+Accuracy of  ship : 93 %
+Accuracy of truck : 87 %
+```
+
+
 ## Training Log
+```
   0%|          | 0/391 [00:00<?, ?it/s]
 
 Epoch 0
@@ -1376,6 +1392,6 @@ Train set: Average loss: 0.0039, Accuracy: 41270/50000 (82.54%)
 
 
 Test set: Average loss: -8.3005, Accuracy: 8400/10000 (84.00%)
-
+```
 
 
