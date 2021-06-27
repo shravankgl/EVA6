@@ -1,6 +1,27 @@
 
 ### Achieve 87% accuracy with C1C2C3C40 architecture and albumentations augmentation with total Params to be less than 100k
 
+## Summary
+1) Params : 86k
+2) Augmentation: Horizontal Flip, ShiftScaleRotate, CoarseDropout, Greyscale
+3) Max Train Accuracy: 83.34
+4) Max Test Accuracy: 87.35
+5) No Max Pooling
+6) Accuracy by Class
+```
+Accuracy of plane : 89 %
+Accuracy of   car : 96 %
+Accuracy of  bird : 79 %
+Accuracy of   cat : 71 %
+Accuracy of  deer : 85 %
+Accuracy of   dog : 80 %
+Accuracy of  frog : 92 %
+Accuracy of horse : 91 %
+Accuracy of  ship : 93 %
+Accuracy of truck : 92 %
+```
+
+
 ## Image Augmentation
 ```
 class Cifar10SearchDataset(torchvision.datasets.CIFAR10):
@@ -18,6 +39,7 @@ class Cifar10SearchDataset(torchvision.datasets.CIFAR10):
 ```
 
 #### Transforms
+```
 train_transform = A.Compose(
     [
         A.ShiftScaleRotate(shift_limit=0.05, scale_limit=0.05, rotate_limit=5, p=0.5),
@@ -37,7 +59,7 @@ test_transform = A.Compose(
         ToTensorV2(),
     ]
 )
-
+```
 #### Augmented Images Sample
 
 ![Augmented Images](https://github.com/shravankgl/EVA6/blob/Session7/7%20AdvancedConcepts/augimages.png)
@@ -106,19 +128,6 @@ Estimated Total Size (MB): 3.67
 ----------------------------------------------------------------
 ```
 
-## Accuracy by Class
-```
-Accuracy of plane : 89 %
-Accuracy of   car : 96 %
-Accuracy of  bird : 79 %
-Accuracy of   cat : 71 %
-Accuracy of  deer : 85 %
-Accuracy of   dog : 80 %
-Accuracy of  frog : 92 %
-Accuracy of horse : 91 %
-Accuracy of  ship : 93 %
-Accuracy of truck : 92 %
-```
 
 
 ## Training Log
