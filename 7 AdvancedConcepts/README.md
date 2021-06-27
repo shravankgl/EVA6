@@ -38,6 +38,10 @@ test_transform = A.Compose(
     ]
 )
 
+#### Augmented Images Sample
+
+![Augmented Images](https://github.com/shravankgl/EVA6/blob/Session7/7%20AdvancedConcepts/augimages.png)
+
 
 ## Model
 
