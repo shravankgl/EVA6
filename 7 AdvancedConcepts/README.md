@@ -130,22 +130,7 @@ Estimated Total Size (MB): 3.67
 ```
 
 ## Receptive Field
-	nin	In Channels	Out Channels	padding	kernel	stride	nout	jin	jout	rin	rout
-C1	32	3	32	1	3	1	32	1	1	1	3
-	32	32	32	1	3	1	32	1	1	3	5
-	32	32	32	1	3	1	32	1	1	5	7
-T1	32	32	32	1	3	2	16	1	2	7	9
-C2	16	32	32	1	3	1	16	2	2	9	13
-	16	32	32	1	3	1	16	2	2	13	17
-T2	16	32	32	1	3	2	8	2	4	17	21
-C3	8	32	32	1	3	1	8	4	4	21	29
-	8	32	32	1	3	1	8	4	4	29	37
-T3	8	32	32	1	3	2	4	4	8	37	45
-C4	4	32	32	1	3	1	4	8	8	45	61
-	4	32	32	1	3	1	4	8	8	61	77
-T4	4	32	16	1	3	1	4	8	8	77	93
-	4	16	16	0	4	1	1	8	8	93	117
-Out	1	16	10	1	1	1	3	8	8	117	117
+
 ![image](https://user-images.githubusercontent.com/5319979/123533569-25f4bf00-d734-11eb-9a25-3e3657da74c8.png)
 
 
