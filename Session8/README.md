@@ -637,7 +637,8 @@ Test set: Average loss: -8.3232, Accuracy: 8227/10000 (82.27%)
 
 # Misclassified Images
 
-![mislassified]()
+![mislassified](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/misclassified.png)
+
 
 # GradCam
  For each misclassified image grid is created as following matrix
@@ -648,4 +649,23 @@ Test set: Average loss: -8.3232, Accuracy: 8227/10000 (82.27%)
 | Original Image | layer3_gradcam_heatmap | layer3_gradcam_plus_plus_heatmap|  layer3_gradcam_mask | layer3_gradcam_plus_plus_mask|
 | Original Image | layer4_gradcam_heatmap | layer4_gradcam_plus_plus_heatmap|  layer4_gradcam_mask | layer4_gradcam_plus_plus_mask|
 
-
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/1.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/2.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/3.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/4.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/5.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/6.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/7.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/8.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/9.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/10.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/11.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/12.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/13.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/14.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/15.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/16.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/17.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/18.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/19.png)
+![mislassified gradcam](https://github.com/shravankgl/EVA6/blob/main/Session8/assets/20.png)
