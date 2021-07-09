@@ -145,6 +145,14 @@ Estimated Total Size (MB): 32.15
 
 ```
 
+# LR Finder
+
+Learning rate search finished. See the graph with {finder_name}.plot()
+LR suggestion: steepest gradient
+Suggested LR: 1.67E-02
+![lrfinder](https://github.com/shravankgl/EVA6/blob/main/Session9/assets/lrfinder.png)
+
+
 # Training Logs
 ```
   0%|          | 0/391 [00:00<?, ?it/s]Epoch 0
